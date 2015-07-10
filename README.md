@@ -5,10 +5,10 @@
 A user will start the game with an instructional page. It will advise the player to enter logo name into the text box. From here, the user will select enter. Once the player selects "Ready?" the game will initiate.
 
 <h3> Rules </h3>
-1) Submit logo name into text field
-2) When correct, a green "correct" will appear and the next logo will appear for answering.
-3) When wrong, a red "wrong" will appear and the same logo will appear waiting for new answer.
-4) When game is complete (20 cards have gone) the user points will be shown.
+- Submit logo name into text field
+- When correct, a green "correct" will appear and the next logo will appear for answering.
+- When wrong, a red "wrong" will appear and the same logo will appear waiting for new answer.
+- When game is complete (20 cards have gone) the user points will be shown.
 
 <h3>Technologies</h3>
 - jQuery used for DOM manipulation
