@@ -10,7 +10,7 @@ A user will start the game with an instructional page. It will advise the player
 3) When wrong, a red "wrong" will appear and the same logo will appear waiting for new answer.
 4) When game is complete (20 cards have gone) the user points will be shown.
 
-<h3> Rules </h3>
+<h3>Technologies</h3>
 - jQuery used for DOM manipulation
 - Javascript
 - CSS for styling
