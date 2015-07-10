@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html>
+<title>Guess the Brand!</title>
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>About Me Page</title>
-  <script type="text/javascript" src='js/main.js'></script>
-  <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    </style>
 </head>
+
 <body>
-<div id="mainNav">
-  <div class="home">Home</div>
-  <div class="aboutme">About Me</div>
-  <div class="portfolio">Portfoilio</div>
-  <div class="contactme">Contact Me</div>
-</div>
-
-
+    <div class="container">
+        <div class="score">
+            <h1 id="scoreTime"><u>Score</u></h1>
+            <div>
+                <h3 id="stopWatch"><time>00</time></h3>
+            </div>
+        </div>
+        <div class="highScore">
+            <h1 id="userScore"><u>Times</u></h1>
+            <div class="topScore">
+            </div>
+        </div>
+        <div class="logoGame">
+            <h1 id="status">Guess the Brand!</h1>
+            <p id="cardCount"></p>
+            <img id="a" />
+            <input type="text" id="answer" maxlendth="15" placeholder="Enter a brand . . . &#x23ce;">
+            <button type="submit" id="clickme">Enter</button>
+            <p id="hint"></p>
+        </div>
+        <div id="completion">
+            <div id="winHead"><u>Congratulations!</u></div>
+            <div id="winEx">You guessed all of the logos!</div>
+            <div id="winUser">Total Points:</div>
+            <div id="winUserTime"></div>
+            <button type="submit" id="restartMe">Restart</button>
+        </div>
+    </div>
+    <script charset="utf-8" src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,91 +1,436 @@
+@import url(http://fonts.googleapis.com/css?family=Londrina+Solid|Nunito:400,300);
+html,
 body {
-    background: url('../images/mainbackground.jpg') no-repeat center center fixed;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    background: url('../images/background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
+    /*overflow-y: hidden;*/
+    
+    font-family: "Londrina Solid", cursive;
+}
+
+.container {
+    position: relative;
+    bottom: 800px;
+}
+
+img {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 270px;
+    max-height: 270px;
+}
+/*STUFF ADDED BY JAVASCRIPT*/
+
+.gameStart {
+    font-size: 40px;
+    padding-top: 0px;
+    position: relative;
+    bottom: 350px;
+    color: #34cd39;
+    font-weight: 300;
+}
+
+.howto {
+    font-size: 25px;
+    padding-top: 0px;
+    position: relative;
+    bottom: 330px;
+    padding: 0px 8px 0px 8px;
+    color: #34cd39;
+    font-weight: 300;
+}
+
+#example1 {
+    height: auto;
+    width: auto;
+    max-width: 270px;
+    max-height: 270px;
+    position: relative;
+    bottom: 350px;
+    box-shadow: 1px 0px 22px 0px #000000;
+    border-radius: 18px 18px 18px 18px;
+    -moz-border-radius: 18px 18px 18px 18px;
+    -webkit-border-radius: 18px 18px 18px 18px;
+}
+
+.startMe {
+    border: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #53BDFF;
+    color: white;
+    transition: .4s;
+    text-shadow: 1px 2px 0 #2EB933;
+    font-family: "Londrina Solid", cursive;
+    position: relative;
+    bottom: 365px;
+}
+
+.startMe:hover {
+    background: #34cd39;
+}
+
+.ready {
+    margin-bottom: 20px;
+    color: #34cd39;
+    position: relative;
+    bottom: 355px;
+    font-size: 16px;
+}
+
+.correct {
+    font-size: 90px;
+    padding-top: 0px;
+    position: relative;
+    bottom: 450px;
+    color: #34cd39;
+    font-weight: 300;
+}
+
+.wrong {
+    font-size: 90px;
+    padding-top: 0px;
+    position: relative;
+    bottom: 450px;
+    color: red;
+    font-weight: 300;
+}
+/*END OF JAVASCRIPT ADDS*/
+
+.highScore {
+    font-family: "Londrina Solid", cursive;
+    margin: auto;
     text-align: center;
-    font-family: Arial;
+    background-color: #323232;
+    height: 420px;
+    width: 200px;
+    box-shadow: 1px 0px 22px 0px #000000;
+    border-radius: 18px 18px 18px 18px;
+    -moz-border-radius: 18px 18px 18px 18px;
+    -webkit-border-radius: 18px 18px 18px 18px;
+    position: relative;
+    left: 324px;
+    top: 545px;
 }
 
-#mainNav{
-  padding: 10px;
+h1#userScore {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    font-size: 40px;
 }
 
-
-.home {
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  text-shadow: 1px 1px 3px #666666;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  border: solid #1f628d 2px;
-  text-decoration: none;
-  width: 50px;
-  float: left;
+h3.defaultCardTime {
+    margin-top: 0px;
+    display: inline;
+    padding-top: 5px;
+    color: #34cd39;
+    font-size: 14px;
 }
 
-.home:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
+.score {
+    font-family: "Londrina Solid", cursive;
+    margin: auto;
+    text-align: center;
+    background-color: #323232;
+    height: 420px;
+    width: 200px;
+    box-shadow: 1px 0px 22px 0px #000000;
+    border-radius: 18px 18px 18px 18px;
+    -moz-border-radius: 18px 18px 18px 18px;
+    -webkit-border-radius: 18px 18px 18px 18px;
+    position: relative;
+    right: 325px;
+    top: 965px;
 }
 
-.aboutme {
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  text-shadow: 1px 1px 3px #666666;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  border: solid #1f628d 2px;
-  text-decoration: none;
-  width: 100px;
-  float: left;
-
+h1#scoreTime {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
 }
 
-.aboutme:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
+h3#stopWatch {
+    margin-top: 0px;
+    display: inline;
+    padding-top: 5px;
+    color: white;
+    font-size: 34px;
 }
-div.portfolio{
-  border: 1px solid;
-  width: 70px;
-  left: 200px;
-  position: absolute;
+
+.logoGame {
+    font-family: "Londrina Solid", cursive;
+    margin: auto;
+    text-align: center;
+    background-color: #323232;
+    height: 620px;
+    width: 400px;
+    box-shadow: 1px 0px 22px 0px #000000;
+    border-radius: 18px 18px 18px 18px;
+    -moz-border-radius: 18px 18px 18px 18px;
+    -webkit-border-radius: 18px 18px 18px 18px;
 }
-div.contactme{
-  border: 1px solid;
-  width: 50px;
-  left: 300px;
-  position: absolute;
+
+h1#status,
+h1#scoreTime,
+h1#userScore {
+    font-size: 50px;
+    padding-top: 20px;
+    color: #53BDFF;
+}
+
+p#hint {
+    margin-bottom: 20px;
+    color: gray;
+    line-height: 9.0;
+}
+
+p#cardCount {
+    position: absolute;
+    bottom: 490px;
+    right: 945px;
+    padding: 0px, 0px, 0px, 0px;
+    color: #34cd39;
+    font-size: 22px;
+}
+
+#answer {
+    border-color: #cccccc;
+    font-size: 24px;
+    padding: 6px;
+    border-width: 2px;
+    border-radius: 0px;
+    border-style: solid;
+    color: #494848;
+    box-shadow: 1px 0px 22px 0px #53BDFF;
+    text-shadow: 0px 0px 0px rgba(42, 42, 42, .84);
+    font-family: "Londrina Solid", cursive;
+    transition: 0.4s;
+    position: relative;
+    left: 50px;
+}
+
+#answer:focus {
+    outline: none;
+}
+
+#answer:hover {
+    box-shadow: 1px 0px 22px 0px #34cd39;
+}
+
+#clickme {
+    border: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #53BDFF;
+    color: white;
+    transition: .4s;
+    text-shadow: 1px 2px 0 #2EB933;
+    font-family: "Londrina Solid", cursive;
+    position: relative;
+    top: 65px;
+    right: 120px;
+}
+
+#clickme:hover {
+    background: #34cd39;
+}
+
+#correct1 {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+#completion {
+    font-family: "Londrina Solid", cursive;
+    text-align: center;
+    right: 500px;
+    top: 860px;
+    background-color: #323232;
+    height: 680px;
+    width: 900px;
+    box-shadow: 1px 0px 22px 0px #000000;
+    border-radius: 18px 18px 18px 18px;
+    -moz-border-radius: 18px 18px 18px 18px;
+    -webkit-border-radius: 18px 18px 18px 18px;
+    position: absolute;
+}
+
+#winHead {
+    font-size: 85px;
+    padding-top: 20px;
+    color: #53BDFF;
+    font-weight: 300;
+}
+
+#winEx {
+    font-size: 65px;
+    padding-top: 20px;
+    color: #34cd39;
+    font-weight: 200;
+}
+
+#winUser {
+    font-size: 60px;
+    right: 90px;
+    top: 30px;
+    position: relative;
+    padding-top: 20px;
+    color: #34cd39;
+    font-weight: 200;
+}
+
+#winUserTime {
+    font-size: 60px;
+    right: 250px;
+    bottom: 340px;
+    position: absolute;
+    padding-top: 20px;
+    color: #53BDFF;
+    font-weight: 200;
+}
+
+#restartMe {
+    border: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #53BDFF;
+    color: white;
+    transition: .4s;
+    text-shadow: 1px 2px 0 #2EB933;
+    font-family: "Londrina Solid", cursive;
+    position: relative;
+    top: 165px;
+}
+
+#restartMe:hover {
+    background: #34cd39;
+}
+/*
+ * FadeIn animation
+*/
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#correct1 {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+/*
+ * FadeOut animation
+*/
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#correct1 {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+#wrong1 {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+/*
+ * FadeIn animation
+*/
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#wrong1 {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+/*
+ * FadeOut animation
+*/
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#wrong1 {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
 }
