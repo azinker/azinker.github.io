@@ -11,10 +11,10 @@ A user will start the game with an instructional page. It will advise the player
 4) When game is complete (20 cards have gone) the user points will be shown.
 
 <h3>User Story</h3>
-- As a user I want to easily see the logo.
-- As a user I want my points to be printed per logo.
+- As a user I want to easily see the logo on each card (Transparent).
+- As a user I want my points to be printed after each logo is answered correct.
 - As a user I want to be able to see what my final score is.
-- As a user I would like to know when im incorrect vs correct.
+- As a user I would like to know when im correct vs incorrect.
 - As a user I would like to easily see my text input.
 
 <h3>MVP</h3>
@@ -27,5 +27,5 @@ A user will start the game with an instructional page. It will advise the player
 - ending point tally
 
 <h3>ICE BOX</h3>
-- Have timer that scores user points
-- Have completion screen
+- Have timer that scores user points and previews it at the end.
+
