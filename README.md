@@ -1,5 +1,4 @@
 ##LOGO QUIZ BRAND GAME
-###User Stories
 
 <h3>Game Start</h3>
 A user will start the game with an instructional page. It will advise the player to enter logo name into the text box. From here, the user will select enter. Once the player selects "Ready?" the game will initiate.
